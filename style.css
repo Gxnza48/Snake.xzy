@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#game-container {
+    position: relative;
+}
+
+canvas {
+    display: block;
+    margin: auto;
+    border: 5px solid #fff;
+}
+
+#overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+#game-over {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#play-again {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease 0.4s;
+}
+#play-again:hover {
+    background-color: #01538a;
+}
+
+#info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    gap: 20px;
+}
+
+#controls-popup {
+    display: none;
+}
+
+#controls,
+#power-ups,
+#time {
+    text-align: left;
+}
+
+#controls h3,
+#power-ups h3,
+#time p {
+    margin-bottom: 10px;
+}
+
+#show-controls,
+#close-controls {
+    padding: 5px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+
+a {
+    color:#5500ff;
+}

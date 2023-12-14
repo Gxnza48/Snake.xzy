@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Snake Game by OpenAI</title>
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="gameCanvas" width="960" height="640"></canvas>
+    <div id="overlay">
+      <div id="game-over">
+        <h2>Game Over</h2>
+        <p>Score: <span id="score">0</span></p>
+        <p>Time: <span id="finalTime">0</span> seconds</p>
+        <button id="play-again">Play Again</button>
+      </div>
+    </div>
+  </div>
+  <div id="info">
+
+    <div id="time">
+      <p>Time: <span id="time-display">0</span> seconds</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
